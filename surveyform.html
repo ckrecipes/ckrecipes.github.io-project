@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="surveyform.css">
+<div class="background">
+<h1 id="title">freeCodeCamp Survey Form</h1>
+ <p id="description">Thank you for taking the time to help us improve the platform</p>
+<body>
+<form id="survey-form" action="muscavagec@gmail.com">
+  <label id="name-label" class="prompt">Name:<br>
+    <input type="text" id="name" placeholder="Enter your Name" pattern="[A-Za-z]{1,30}" required></label><br>
+  <label id="email-label" class="prompt">Email:<br>
+    <input type="email" id="email" placeholder="Enter your email" required></label><br>
+  <label id="number-label" class="prompt">Age (optional):<br>
+    <input type="number" id="number" pattern="[0-9]" min="0" max="120" placeholder="Age"></label><br>
+  <label class="prompt">Which option best describes your current role?<br>
+    <select>
+      <option value="student" id="dropdown">Student</option>
+      <option value="fulltime" id="dropdown">Full Time Job</option>
+      <option value="student" id="dropdown">Full Time Learner</option>
+      <option value="student" id="dropdown">Prefer Not To Say</option>
+      <option value="student" id="dropdown">Other</option>
+    </select><br>
+   <label class="prompt">Would you recommend freeCodeCamp to a friend?<br>
+     <section class="other">
+     <label><input type="radio" name="selection" value="Definitely"/> Definitely</label><br>
+     <label><input type="radio" name ="selection" value="Maybe"/> Maybe</label><br>
+     <label><input type="radio" name="selection" value="Note sure"/> Not Sure</label><br>
+    </label><br>
+    </section>
+   <label class="prompt">What is your favorite feature of freeCodeCamp?<br>
+    <select value="select an option" id="dropdown">
+      <option value="student">Challenges</option><br>
+      <option value="fulltime">Projects</option><br>
+      <option value="student">Community</option><br>
+      <option value="student">Open Source</option>
+    </select><br>
+    <div id="checkbox"> 
+    <label class="prompt" id="extend">What would you like to see improved? (Check all that apply)<br>
+     <section class="other">
+     <br>
+     <label><input type="checkbox" value="front"/> Front-end Projects</label><br>
+     <label><input type="checkbox" value="back"/> Back-end Projects</label><br>
+     <label><input type="checkbox" value="data"/> Data Visualization</label><br>
+     <label><input type="checkbox" value="challenges"/> Challenges</label><br>
+     <label><input type="checkbox" value="open-source"/> Open Source Community</label><br>
+     <label><input type="checkbox" value="gitter"/> Gitter help rooms</label><br>
+     <label><input type="checkbox" value="videos"/> Videos</label><br>
+     <label><input type="checkbox" value="meetups"/> City Meetups</label><br>
+     <label><input type="checkbox" value="wiki"/> Wiki</label><br>
+     <label><input type="checkbox" value="forum"/> Forum</label><br>
+     <label><input type="checkbox" value="additional"/> Additional Courses</label><br>
+      </section>
+      </div>
+    <section>
+    <label class="prompt" id="box"><div id="suggestions">Any comments or suggestions?<div><br>
+      <textarea rows="10" cols="30" placeholder="Enter your comment here" id="comment-area"></textarea>
+      </section>    
+    <input type="submit" id="submit" action="muscavagec@gmail.com">
+</body>
+</div>
+  </form>
+</html>
